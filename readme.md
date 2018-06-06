@@ -1,3 +1,5 @@
+![LXD CentOS](/lxd-centos-01-tn.png)
+
 # LXD Container Build For CentOS 7 Guest
 
 Steps for creating a [LXD](https://www.ubuntu.com/containers/lxd) golden base CentOS 7 64bit image for LXD guest container usage intended for [Centmin Mod LEMP stack](https://centminmod.com)
@@ -89,7 +91,7 @@ lxc list ^centos75$
 
 # Checking centos75 Container NOFILE Limits
 
-Within `centos75` container checking custom set nginx process `NOFILE` limits = `524288`. Systemd 234 updated version allowed us to properly set the `NOFILE` limits. With native CentOS 7's Sysdtem 219 version it would of be set to max hardcoded limit of `65536`. If Centmin Mod LEMP stack installer didn't set nginx to `524288` value, updated and fixed Systemd 234 version would of set it to value that LXD host config sets which is `1048576` (shown at [here](#lxd-host-nofile).
+Within `centos75` container checking custom set nginx process `NOFILE` limits = `524288`. Systemd 234 updated version allowed us to properly set the `NOFILE` limits. With native CentOS 7's Sysdtem 219 version it would of be set to max hardcoded limit of `65536`. If Centmin Mod LEMP stack installer didn't set nginx to `524288` value, updated and fixed Systemd 234 version would of set it to value that LXD host config sets which is `1048576` (shown at [here](#lxd-host-nofile)).
 
 ```
 root      2755  0.0  0.1 114716 23524 ?        Ss   Jun05   0:00 nginx: master process /usr/local/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
