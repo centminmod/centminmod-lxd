@@ -118,11 +118,11 @@ SIGPENDING max number of pending signals          63928     63928 signals
 STACK      max stack size                       8388608 unlimited bytes
 ```
 
-> nginx -V
-> nginx version: nginx/1.13.12 (050618-001557)
-> built by gcc 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) 
-> built with OpenSSL 1.1.0h  27 Mar 2018
-> TLS SNI support enabled
+    nginx -V
+    nginx version: nginx/1.13.12 (050618-001557)
+    built by gcc 7.3.1 20180303 (Red Hat 7.3.1-5) (GCC) 
+    built with OpenSSL 1.1.0h  27 Mar 2018
+    TLS SNI support enabled
 > configure arguments: --with-ld-opt='-ljemalloc -Wl,-z,relro -Wl,-rpath,/usr/local/lib' --with-cc-opt='-m64 -march=native -DTCP_FASTOPEN=23 -g -O3 -fstack-protector-strong -flto -fuse-ld=gold --param=ssp-buffer-size=4 -Wformat -Werror=format-security -Wimplicit-fallthrough=0 -fcode-hoisting -Wp,-D_FORTIFY_SOURCE=2 -gsplit-dwarf' --sbin-path=/usr/local/sbin/nginx --conf-path=/usr/local/nginx/conf/nginx.conf --build=050618-001557 --with-compat --with-http_stub_status_module --with-http_secure_link_module --with-libatomic --with-http_gzip_static_module --with-http_sub_module --with-http_addition_module --with-http_image_filter_module=dynamic --with-http_geoip_module --with-stream_geoip_module --with-stream_realip_module --with-stream_ssl_preread_module --with-threads --with-stream=dynamic --with-stream_ssl_module --with-http_realip_module --add-dynamic-module=../ngx-fancyindex-0.4.2 --add-module=../ngx_cache_purge-2.4.2 --add-module=../ngx_devel_kit-0.3.0 --add-dynamic-module=../set-misc-nginx-module-0.32 --add-dynamic-module=../echo-nginx-module-0.61 --add-module=../redis2-nginx-module-0.15 --add-module=../ngx_http_redis-0.3.7 --add-module=../memc-nginx-module-0.18 --add-module=../srcache-nginx-module-0.31 --add-dynamic-module=../headers-more-nginx-module-0.33 --with-pcre=../pcre-8.42 --with-pcre-jit --with-zlib=../zlib-cloudflare-1.3.0 --with-http_ssl_module --with-http_v2_module --with-openssl=../openssl-1.1.0h --with-openssl-opt='enable-ec_nistp_64_gcc_128'
 
 # LXD Host NOFILE
