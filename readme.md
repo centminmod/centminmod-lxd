@@ -70,6 +70,11 @@ lxc config set centos75 boot.autostart true
 lxc exec centos75 -- systemctl --version
 ```
 
+```
+lxc exec centos75 -- cat /etc/redhat-release
+CentOS Linux release 7.5.1804 (Core)
+```
+
 checking Systemd version for `centos75` container
 
 ```
